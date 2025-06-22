@@ -706,7 +706,7 @@ footer{
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('bg.png') no-repeat center center;
+    background: url('/bg.png') no-repeat center center;
     background-size: cover;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
