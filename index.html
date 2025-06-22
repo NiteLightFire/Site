@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+  <head>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+  </head>
+<body>
+    <header>
+        <div class="header-info">
+            <img src="logo.png" alt="logo-icon">
+            <p class="P_14"><span class="medium">Петров</span><br>Игорь Евгеньевич</p>
+        </div>
+        <img class="header-menu" src="ico_menu.png" alt="menu" id="openModal">
+    </header>
+    <main>
+        <nav class="nav">
+            <a href="#partingwords" class="active">Напутственное слово</a>
+            <a href="#grid" class="nav-item">Сетка</a>
+            <a href="#typography" class="disabled">Типографика</a>
+            <a href="#UI" class="disabled">UI</a>
+        </nav>
+        <div class="content">
+            <div class="intro">
+                <h1 id="partingwords" class="intro__title">Тестовое задание</h1>
+                <p class="intro_level">Уровень: junior</p>
+                <p class="intro_text">Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?</p>
+            </div>
+            <div>
+                <h2 class="Titles" id="grid">Сетка</h2>
+                <p class="grid_text">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
+                <article class="device">
+                    <h3>Десктоп (1200+)</h3>
+                    <div class="device_specs">
+                        <div class="specs_container">
+                            <p class="device_text">Контент</p>
+                            <h3>1072–1312</h3>
+                        </div>
+                        <div>
+                            <p class="device_text">Колонок</p>
+                            <h3>12</h3>
+                        </div>
+                        <div>
+                            <p class="device_text">Ширина колонки</p>
+                            <h3>60-80</h3>
+                        </div>
+                        <div>
+                            <p class="device_text">Межколонник</p>
+                            <h3>32</h3>
+                        </div>
+                    </div>
+                    <img src="pic_desctop.png" alt="picture-desctop" class="device-img">
+                </article>
+                <article class="device">
+                    <h3 class="device_title">Планшет (736+)</h3>
+                    <div class="device_specs">
+                        <div>
+                            <div class="device_text">Контент</div>
+                            <h3>672–928</h3>
+                        </div>
+                        <div>
+                            <div class="device_text">Колонок</div>
+                            <h3>8</h3>
+                        </div>
+                        <div>
+                            <div class="device_text">Ширина колонки</div>
+                            <h3>56-88</h3>
+                        </div>
+                        <div>
+                            <div class="device_text">Межколонник</div>
+                            <h3>32</h3>
+                        </div>
+                    </div>
+                <img src="pic_tab.png" alt="picture-tab" class="device-img">
+                </article>
+                <article class="device">
+                    <h3 class="device_title">Телефон (320+)</h3>
+                    <div class="device_specs">
+                        <div class="">
+                            <div class="device_text">Контент</div>
+                            <h3>296–424</h3>
+                        </div>
+                        <div>
+                            <div class="device_text">Колонок</div>
+                            <h3>4</h3>
+                        </div>
+                        <div>
+                            <div class="device_text">Ширина колонки</div>
+                            <h3>56-88</h3>
+                        </div>
+                        <div>
+                            <div class="device_text">Межколонник</div>
+                            <h3>24</h3>
+                        </div>
+                    </div>
+                    <img src="pic_mob.png" alt="picture-mob" class="device-img">
+                </article>
+            </div>
+            <section>
+                <h2 class="Titles" id="typography">Типографика</h2>
+                <p class="grid_text">Используется шрифт Graphik. На телефонах стили типографики переопределяются</p>
+                <div class="tabs">
+                    <button class="tab active" data-view="desktop">Десктоп</button>
+                    <button class="tab" data-view="mobile">Телефон</button>
+                </div>
+                <div class="desktop-view active" id="desktopView">
+                    <div class="typography-item">
+                        <div class="typography-meta">3xl-bold, H1, 48/56, bold</div>
+                        <h1>Текст заголовка</h1>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">2xl-bold, H2, 32/40, bold</div>
+                        <h2>Текст заголовка</h2>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">xl-bold, H3, 24/32, medium</div>
+                        <h3>Текст заголовка</h3>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">lg-medium, H4, 18/28, medium</div>
+                        <h4>Текст заголовка</h4>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Лид / Lead, 24/32, regular</div>
+                        <div class="P_Lead">Текст лида</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Крупный текст P, 18, 26/28, regular</div>
+                        <div class="P_18">Крупный текст</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Основной текст P, 16, 20/24, regular</div>
+                        <div class="P_16">Основной текст</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Вспомогательный текст P, 14, 14/20, regular</div>
+                        <div class="P_14">Вспомогательный текст</div>
+                    </div>
+                </div>
+                <div class="mobile-view" id="mobileView">
+                    <div class="typography-item">
+                        <div class="typography-meta">заголовок H1, 32/40, bold</div>
+                        <div class="h1-mobile">Текст заголовка</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">заголовок H2, 28/36, bold</div>
+                        <div class="h2-mobile">Текст заголовка</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">заголовок H3, 20/28, medium</div>
+                        <div class="h3-mobile">Текст заголовка</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">заголовок H4, 18/26, medium</div>
+                        <div class="h4-mobile">Текст заголовка</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Лид / Lead, 20/28, regular</div>
+                        <div class="mobile-P_Lead">Текст лида</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Крупный текст P, 18, 26/28, regular</div>
+                        <div class="P_18">Крупный текст</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Основной текст P, 16, 20/24, regular</div>
+                        <div class="P_16">Основной текст</div>
+                    </div>
+                    <div class="typography-item">
+                        <div class="typography-meta">Вспомогательный текст P, 14, 14/20, regular</div>
+                        <div class="P_14">Вспомогательный текст</div>
+                    </div>
+                </div>
+            </section>
+            <section class="UI">
+                <h2 class="Titles" id="UI">UI</h2>
+                <h3 id="text">Текстовое поле</h3>
+                <div class="email-UI">
+                    <div class="email-placeholder">
+                        <div></div>
+                        <div class="email-group">
+                            <input class="email" placeholder=" " type="email" />
+                            <label class="email-label">E-mail</label>
+                        <div class="error-message"></div>
+                    </div>
+                    </div>
+                    <div class="placeholder">
+                        <p>Ховер</p>
+                        <div class="email-group">
+                            <input class="email-hover" placeholder=" " type="email" disabled>
+                            <label class="email-label" for="email">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="placeholder-disable">
+                        <p>Ввод</p>
+                        <div class="email-group focused has-value">
+                            <input class="email email-focus" placeholder=" " type="email" value="office@make.st" disabled>
+                            <label class="email-label" for="email">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="placeholder-disable">
+                        <p>Ошибка</p>
+                        <div class="email-group error focused has-value">
+                            <input class="email" placeholder=" " type="email" value="officemake.st" disabled />
+                            <label class="email-label">E-mail</label>
+                        <div class="error-message">Текст ошибки</div>
+                    </div>
+                </div>
+            </section>
+            <h3 id="list">Выпадающий список</h3>
+            <p class="grid_text">Компонент состоит из текстового поля и выпадающей подсказки</p>
+            <div class="section-list">    
+                <div>
+                    <p></p>
+                    <button  class="list" onclick="toggleDropdown()">Выберите что-нибудь</button>
+                <ul id="dropdown" style="display: none;">
+                    <li><button class="list_">Первый стул</button></li>
+                    <li><button class="list_">Второй стул</button></li>
+                    <li><button class="list_">Выбранный пункт</button></li>
+                    <li><button class="list_">Теорема Эскобара</button></li>
+                </ul>
+                </div>
+                <div>
+                    <p></p>
+                    <button  class="list-hover">Выберите что-нибудь</button>
+                </div>
+                <div>
+                    <p></p>
+                    <button  class="list">Выберите что-нибудь</button>
+                <ul>
+                    <li><button class="list_">Первый стул</button></li>
+                    <li><button class="list_">Второй стул</button></li>
+                    <li><button class="list_hover">Выбранный пункт</button></li>
+                    <li><button class="list_focus">Теорема Эскобара</button></li>
+                </ul>
+                </div>
+            </div>
+            <section class="section">
+                <h3>Кнопка</h3>
+                <div class="section-button">
+                    <div>
+                        <button class="button">Отправить</button>
+                    </div>
+                    <div>
+                        <p>Ховер</p>
+                        <button class="button_hover">Отправить</button>
+                    </div>
+                    <div>
+                        <p>Нажатие</p>
+                        <button class="button_active">Отправить</button>
+                    </div>
+                    <div>
+                        <p>Неактивна</p>
+                        <button class="button_disabled">Отправить</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h3>Чекбокс, радиобаттон</h3>
+                <div class="radio_check">
+                    <div class="checkbox-group">
+                        <label class="checkbox"><input type="checkbox"><span class="checkmark"></span>Выбери меня</label>
+                        <label class="checkbox checkbox--disabled"><input type="checkbox"><span class="checkmark"></span>Выбери меня</label>
+                        <label class="checkbox checkbox--active"><input type="checkbox"><span class="checkmark"></span>Птица счастья завтрашнего дня</label>
+                    </div>
+                    <br>
+                    <div class="radio-group">
+                        <label class="radio"><input type="radio" name="my_defense"><span class="radiomark"></span>Пластмассовый мир победил</label>
+                        <label class="radio radio--disabled"><input type="radio" name="my_defense"><span class="radiomark"></span>Макет оказался сильней</label>
+                        <label class="radio radio--active"><input type="radio" name="my_defense"><span class="radiomark"></span>Последний кораблик остыл</label>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h3>Аккордеон</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Аккордеон</button>
+                        <div class="accordion-content">
+                            <p>Гоpдость полными вагонами золотыми погонами<br>С юга дyют молодые вет…<br>Pазpывая в клочья облака не забыли шлют из далека<br>С дома мама И не последняя любовь<br>А по небy бегyт видишь чьи-то следы<br>Это может быть ты это может быть я<br>Это может наш дрyг<br>Это может нам поют свои</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header active">Аккордеон</button>
+                        <div class="accordion-content open">
+                            <p>Гоpдость полными вагонами золотыми погонами<br>С юга дyют молодые вет…<br>Pазpывая в клочья облака не забыли шлют из далека<br>С дома мама И не последняя любовь<br>А по небy бегyт видишь чьи-то следы<br>Это может быть ты это может быть я<br>Это может наш дрyг<br>Это может нам поют свои</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="P-14">Победа! 😜</p>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <img src="logo.png">
+                <p>Задание выполнил</p>
+            </div>
+            <div class="modal-info">
+                <h2>Петров<br>Игорь Евгеньевич</h2>
+                <p class="P_16">Студент 2 курса специальности «Информационные системы и программирование» в СПТ</p>
+                <h4>+7 (960) 921-91-43</h4>
+                <div class="modal-bottom">
+                    <div class="circle"><img src="link.png"></div>
+                    <p>@NiteLight_Fire</p>
+                </div>
+            </div>
+        </div>
+        <span class="close-btn" id="closeModal">&times;</span>
+    </div>
+</body>
+<script src="JavaScript.js"></script>
+</html>
+<style>
+
