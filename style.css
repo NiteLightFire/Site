@@ -924,7 +924,7 @@ header{
 }
 .email-UI{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-colums: repeat(1, 1fr);
     gap: 20px;
 }
 .section-button{
@@ -958,3 +958,4 @@ header{
     padding-top: 64px;
 }
 }
+
